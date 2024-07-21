@@ -6,7 +6,7 @@ public:
      int remain;
      for(int i=0;i<nums.size();i++)
      {
-         int num=nums[i];
+         
          remain=target-nums[i];
          if(st.find(remain)!=st.end())
          {
@@ -14,7 +14,7 @@ public:
              ans.push_back(st[remain]);
              break;
          }
-         st[num]=i;
+         st[nums[i]]=i;
      }
      return ans;
         
